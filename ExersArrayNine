@@ -1,0 +1,16 @@
+package Arrays;
+/*9 Прибавить к элементам массива их индекс*/
+/**
+ * Created by vika on 01.08.15.
+ */
+public class ExersArrayNine {
+    public static void main(String[] args) {
+        int arrWiolet[] = {52, 96, 34, 56, 75, 95};
+        int b = 0;
+        for( int count = 0; count < arrWiolet.length; count++){
+            System.out.println(count);
+            System.out.println(arrWiolet[count]);
+            System.out.println(count + arrWiolet[count]);
+        }
+    }
+}
