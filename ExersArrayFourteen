@@ -1,0 +1,18 @@
+package Arrays;
+/*14 Посчитать количество элементов равных заданному*/
+/**
+ * Created by vika on 01.08.15.
+ */
+public class ExersArrayFourteen {
+    public static void main(String[] args) {
+        int example = 2;
+        int count = 0;
+        int Vika[] = {85, 26, 21, 2, 3, 1, 5, 2, 8, 2, 63};
+        for (int i = 0; i < Vika.length; i++){
+            if( Vika[i] == example){
+                count++;
+            }
+        }
+        System.out.println(count);
+    }
+}
