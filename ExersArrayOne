@@ -1,0 +1,16 @@
+package Arrays;
+/*1 Найти сумму элементов массива*/
+/**
+ * Created by vika on 01.08.15.
+ */
+public class ExersArrayOne {
+    public static void main(String args[]) {
+        int array_first[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        int summary = 0;
+        for (int i = 0; i < 10; i++) {
+            summary += array_first[i];
+        }
+        System.out.println(summary);
+
+    }
+}
