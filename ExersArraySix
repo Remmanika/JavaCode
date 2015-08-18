@@ -1,0 +1,18 @@
+package Arrays;
+/*6 Посчитать количество элементов равных нулю*/
+/**
+ * Created by vika on 01.08.15.
+ */
+public class ExersArraySix {
+    public static void main(String[] args) {
+        int arrYellow[] = {1, 0, 8, 96, 0, 6, 85, 36, 0, 0, 0, 0, 74};
+        int count = 0;
+        int example = 0;
+        for (int i = 0; i < arrYellow.length; i++){
+            if(arrYellow[i] == example){
+                count++;
+            }
+        }
+        System.out.println(count);
+    }
+}
