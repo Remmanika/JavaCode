@@ -1,0 +1,50 @@
+package Arrays;
+
+/**
+ * Created by Vika on 10.08.2015.
+ */
+public class EsersArrayTwelve2 {
+    public static void main(String[] args) {
+
+       // randomTwoMassive();
+        int sum = 0;
+        int count = 4; // 4 массива по 5 элементов
+        int temp = 5;
+        int myMass[][]  = new int [count] [temp];
+        for  (int i = 0; i < myMass.length; i++) {
+            for (int x =0; x < myMass[i].length; x++){
+                myMass[i][x] = (int) (Math.random() * count);
+                System.out.print(myMass[i][x] + " ");
+            }
+            System.out.println();
+        }
+
+        for (int []mas:myMass){
+            for(int val:mas){
+                sum += val;
+            }
+        }
+        System.out.println("Sum is = " + sum);
+        sum = 0;
+        for(int i = 0; i < myMass.length; i++){
+            for(int x = 0; x < myMass[i].length; x++){
+                sum += myMass[i][x];
+            }
+        }
+        System.out.println("sum 2 is = " + sum);
+    }
+
+    private static void randomTwoMassive() {
+        int count = 4; // 4 массива по 5 элементов
+        int temp = 5;
+        int myMass[][]  = new int [count] [temp];
+        for  (int i = 0; i < myMass.length; i++) {
+            for (int x =0; x < myMass[i].length; x++){
+                myMass[i][x] = (int) (Math.random() * count);
+                System.out.print(myMass[i][x] + " ");
+            }
+            System.out.println();
+        }
+    }
+
+}
