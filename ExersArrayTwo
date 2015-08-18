@@ -1,0 +1,22 @@
+package Arrays;
+/*2 Найти максимальный элемент, значение и индекс*/
+/**
+ * Created by vika on 01.08.15.
+ */
+public class ExersArrayTwo {
+    public static void main(String args[]){
+        int array1 [] = {1, 7, 9, 10, 108, 1508, 2, 3, 4, 6, 85, 96};
+        int max = array1[0];
+        for (int i = 0; i < array1.length; i++){
+            if(max < array1[i]){
+                max = array1[i];
+            }
+        }
+        int maxIndex = array1.length;
+        for (int b = array1.length; b > 0;){
+            b++;
+        }
+        System.out.println(maxIndex);
+        System.out.println(max);
+    }
+}
