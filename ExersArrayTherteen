@@ -1,0 +1,18 @@
+package Arrays;
+/*13 Найти последний отрицательный элемент*/
+/**
+ * Created by vika on 01.08.15.
+ */
+public class ExersArrayTherteen {
+    public static void main(String[] args) {
+
+        int arrMyPC[] = {5, 56, -10, -2, 56, 36, -8, 96, 23};
+        for (int i = arrMyPC.length - 1; i >= 0; i--) {
+            if(arrMyPC[i] < 0){
+
+                System.out.println("[" + i + "]" + " " + arrMyPC[i]);
+                break;
+            }
+        }
+    }
+}
