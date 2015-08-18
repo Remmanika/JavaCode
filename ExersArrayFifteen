@@ -1,0 +1,18 @@
+package Arrays;
+/*15 Найти индексы вхождения элемента в массив*/
+/**
+ * Created by vika on 01.08.15.
+ */
+public class ExersArrayFifteen {
+    public static void main(String[] args) {
+        int myArray[] = {2, 56, 2, 85, 2, 96, 55, 2};
+        int example = 2;
+        int count = 0;
+        for(int i = 0; i < myArray.length; i++){
+            if(myArray[i] == example){
+                count++;
+                System.out.println("Indexes" + " = " + "[" + i + "]");
+            }
+        }
+    }
+}
