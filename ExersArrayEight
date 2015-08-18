@@ -1,0 +1,15 @@
+package Arrays;
+/*8 Помножить элементы массива на число*/
+/**
+ * Created by vika on 01.08.15.
+ */
+public class ExersArrayEight {
+    public static void main(String[] args) {
+        int arrGreen[] = {2, 6, 9, 8, 5, 4, 3};
+        int example = 2;
+        for (int i = 0; i < arrGreen.length; i++){
+            arrGreen[i] = arrGreen[i] * example;
+            System.out.print(arrGreen[i]+ " ");
+        }
+    }
+}
