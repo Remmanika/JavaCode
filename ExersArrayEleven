@@ -1,0 +1,16 @@
+package Arrays;
+/*11 Обнулить элементы  с нечетным индексом.*/
+/**
+ * Created by vika on 01.08.15.
+ */
+public class ExersArrayEleven {
+    public static void main(String[] args) {
+        int arrHurray[] = {-25, -36, -95, 84, 63, 12, 0, -36, 56};
+        int count = 0;
+        int example = 0;
+        for(int i = 1; i < arrHurray.length; i += 2){
+            arrHurray[i] = 0;
+        }
+        System.out.println(java.util.Arrays.toString(arrHurray));
+    }
+}
