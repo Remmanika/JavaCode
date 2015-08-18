@@ -1,0 +1,22 @@
+package Arrays;
+/*17 Проверить массив на упорядоченность элементов по спаданию*/
+/**
+ * Created by vika on 01.08.15.
+ */
+public class ExersArraySeventeen {
+    public static void main(String[] args) {
+        int arrSecond[] = {10,7,6,2,-1};
+        boolean sorted = true;
+        for(int i = arrSecond.length-2; i >= 0; i--){
+            if(arrSecond[i + 1] > arrSecond[i]){ //если следующий больше предыдущего - неотсортирванный
+                sorted = false;
+                break;
+            }
+        }
+        if(sorted){
+            System.out.println("it's sorted");
+        }else {
+            System.out.println("it's not sorted");
+        }
+    }
+}
