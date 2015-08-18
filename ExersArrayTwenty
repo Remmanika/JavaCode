@@ -1,0 +1,25 @@
+package Arrays;
+/*20 Найти количество элементов больших среднего значения*/
+/**
+ * Created by Vika on 08.08.2015.
+ */
+public class ExersArrayTwenty {
+    public static void main(String[] args) {
+        int array[] = {2, -9, 10, -6, 8, 4, 7, 3};
+        int sum = 0;
+        for(int index = 0; index < array.length; index++){
+            sum = sum + array[index]; // сумма елементов и проход цикла
+        }
+        System.out.println(sum);
+        float percent = sum / array.length; // среднее значение
+        System.out.println(percent);
+
+        int count = 0;
+        for(int i = 0; i < array.length; i++){
+            if(array[i] > percent){ // подсчет значений и прокрутка цикла
+                count++;
+            }
+        }
+        System.out.println(count);
+    }
+}
