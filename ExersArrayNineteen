@@ -1,0 +1,19 @@
+package Arrays;
+/*19 Вывести элементы, значения которых равны значениям других элементов.*/
+/**
+ * Created by vika on 01.08.15.
+ */
+public class ExersArrayNineteen {
+    public static void main(String[] args) {
+        int arrFuture[] = {25, 36, 25,  12, 52, 12, 25, 33, 36};
+        for (int i = 0; i < arrFuture.length; i++){
+            int key = arrFuture[i];
+
+            for(int g = i + 1; g < arrFuture.length; g++){
+                if(arrFuture[g] == key){
+                    System.out.println("array["+i+"]==array["+g+"]="+arrFuture[i]);
+                }
+            }
+        }
+    }
+}
