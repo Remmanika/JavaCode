@@ -1,0 +1,19 @@
+package Arrays;
+/*10 Обнулить четные по значению элементы массива*/
+/**
+ * Created by vika on 01.08.15.
+ */
+public class ExersArrayTen {
+    public static void main(String[] args) {
+        int arrColour[] = {2, 8, 6, 9, 1, 35, 8, 67, 19};
+        int count = 0;
+        int example = 0;
+        for(int i = 0; i < arrColour.length; i++){
+            if(arrColour[i] % 2 == 0){
+                arrColour[i] = example;
+                System.out.println(arrColour[i]);
+            }
+        }
+        System.out.println(java.util.Arrays.toString(arrColour));
+    }
+}
