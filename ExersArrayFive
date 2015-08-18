@@ -1,0 +1,18 @@
+package Arrays;
+/*5 Посчитать количество элементов равных заданному*/
+/**
+ * Created by vika on 01.08.15.
+ */
+public class ExersArrayFive {
+    public static void main(String[] args) {
+        int arrayStraw[] = {15, 85, 96, 2, 45, 2, 36, 75,  2, 2, 2};
+        int count = 0;
+        int example = 2;
+        for(int i = 0; i < arrayStraw.length; i++){
+            if(arrayStraw[i] == example){
+                 count++;
+            }
+        }
+        System.out.println(count);
+    }
+}
