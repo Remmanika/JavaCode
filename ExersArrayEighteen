@@ -1,0 +1,25 @@
+package Arrays;
+
+/*18 Циклический сдвиг элементов массива на k- позиций вправо*/
+
+import java.util.Arrays;
+
+/**
+ * Created by Vika on 08.08.2015.
+ */
+public class ExersArrayEighteen {
+    public static void main(String[] args) {
+        int array[] = {2, 8, 9, 75, 64, 1, 5, 6};
+        System.out.println(Arrays.toString(array));
+        for(int k = 0; k<3; k++) {
+            int temp = array[array.length - 1];
+            for (int index = array.length - 2; index >= 0; index--) {
+                array[index + 1] = array[index];
+                // System.out.print(array[index] + " ");
+            }
+            array[0]=temp;
+        }
+
+        System.out.println(Arrays.toString(array));
+    }
+}
