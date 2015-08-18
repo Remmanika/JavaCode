@@ -1,0 +1,23 @@
+package Arrays;
+/*22 Вывести элементы одного массива, которые не равны элементам второго массива.*/
+/**
+ * Created by Vika on 08.08.2015.
+ */
+public class ExersArray22 {
+    public static void main(String[] args) {
+        int arrayFirst[] = {2, 5, 65, 74, -5, -95, -2};
+        int arraySecond[] = {2, 5, 65, 2, 85, 2, 74};
+
+        for(int i = 0; i < arrayFirst.length; i++){
+                int key = arrayFirst[i];
+
+            for(int h = 0; h < arraySecond.length; h++){
+                int keySec = arraySecond[h];
+
+                if(key != keySec){
+                    System.out.println("array First[" + i + "] != array Second[" + h + "]=" + arrayFirst[i]);
+                }
+            }
+        }
+    }
+}
